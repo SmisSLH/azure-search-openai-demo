@@ -109,13 +109,13 @@ class ChatReadRetrieveReadApproach(ChatApproach):
                 "type": "function",
                 "function": {
                     "name": "search_sources",
-                    "description": "Retrieve sources from the Azure AI Search index",
+                    "description": "Azure AI Searchインデックスからソースデータを検索する",
                     "parameters": {
                         "type": "object",
                         "properties": {
                             "search_query": {
                                 "type": "string",
-                                "description": "Query string to retrieve documents from azure search eg: 'Health care plan'",
+                                "description": "Azure Searchから文書を取得するためのクエリ文字列",
                             }
                         },
                         "required": ["search_query"],
