@@ -10,10 +10,10 @@ from approaches.approach import Approach
 
 class ChatApproach(Approach, ABC):
     query_prompt_few_shots: list[ChatCompletionMessageParam] = [
-        {"role": "user", "content": "How did crypto do last year?"},
-        {"role": "assistant", "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": "user", "content": "What are my health plans?"},
-        {"role": "assistant", "content": "Show available health plans"},
+        {"role": "user", "content": "どのように有給休暇を申請しますか？"},
+        {"role": "assistant", "content": "有給休暇の申請方法を説明します。"},
+        {"role": "user", "content": "グループ権限の有効期限は延長できますか?"},
+        {"role": "assistant", "content": "グループ権限は延長できるかを確認して回答します。延長できれば、延長方法を説明します。"},
     ]
     NO_RESPONSE = "0"
 
