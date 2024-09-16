@@ -23,7 +23,7 @@ class TextSplitter(ABC):
 
 ENCODING_MODEL = "text-embedding-ada-002"
 
-STANDARD_WORD_BREAKS = ["、", "：", " ", "（", "）", "[", "]", "{", "}", "\t", "\n", "「", "」", "『", "』"],
+STANDARD_WORD_BREAKS = [",", ";", ":", " ", "(", ")", "[", "]", "{", "}", "\t", "\n"],
 
 # See W3C document https://www.w3.org/TR/jlreq/#cl-01
 CJK_WORD_BREAKS = [
@@ -69,7 +69,7 @@ CJK_WORD_BREAKS = [
     "›",
 ]
 
-STANDARD_SENTENCE_ENDINGS = ["。", "！", "？"]
+STANDARD_SENTENCE_ENDINGS = [".", "!", "?"]
 
 # See CL05 and CL06, based on JIS X 4051:2004
 # https://www.w3.org/TR/jlreq/#cl-04
